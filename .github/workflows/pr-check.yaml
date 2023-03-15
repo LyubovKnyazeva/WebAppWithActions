@@ -20,12 +20,12 @@
 
         - name: Restore dependencies
           run: dotnet restore
-          working_directory: WebApplication_15.03.2023_WithActions
+          working-directory: WebApplication_15.03.2023_WithActions
 
         - name: Build
           run: dotnet build --no-restore
-          working_directory: WebApplication_15.03.2023_WithActions
+          working-directory: WebApplication_15.03.2023_WithActions
 
         - name: Tests
           run: dotnet test --no-build
-          working_directory: WebApplication_15.03.2023_WithActions
+          working-directory: WebApplication_15.03.2023_WithActions.Test.Unit
